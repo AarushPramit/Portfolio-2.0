@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F5F3EE;
+  color: #14274E;
+  font-family: 'DM Sans', sans-serif;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section-padding {
+  padding: 120px 8%;
+}
+
+.glass-light {
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(20,39,78,0.08);
+}
+
+.primary-text {
+  color: #14274E;
+}
+
+.secondary-text {
+  color: #6B7280;
+}
+
+.accent-color {
+  color: #9A6B46;
+}
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+img,
+div,
+section,
+motion-div {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
