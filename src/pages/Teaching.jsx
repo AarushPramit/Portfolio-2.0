@@ -5,7 +5,7 @@ function Teaching() {
     <div className="overflow-hidden bg-[#F5F3EE] text-[#14274E]">
 
       {/* HERO */}
-      <section className="px-6 pt-36 pb-16 md:px-10 lg:px-[8%]">
+      <section className="px-6 pt-32 pb-14 md:px-10 lg:px-[8%]">
 
         <motion.div
           initial={{ opacity: 0, y: 70 }}
@@ -17,13 +17,13 @@ function Teaching() {
           className="max-w-6xl"
         >
 
-          <p className="mb-6 text-sm uppercase tracking-[0.35em] text-[#9A6B46]">
+          <p className="mb-5 text-[11px] uppercase tracking-[0.35em] text-[#9A6B46] sm:text-sm">
             Education & Pedagogy
           </p>
 
           <h1
             className="
-            text-5xl
+            text-[3.6rem]
             sm:text-6xl
             lg:text-[5.5rem]
             font-bold
@@ -40,7 +40,7 @@ function Teaching() {
       </section>
 
       {/* PHILOSOPHY */}
-      <section className="px-6 pb-24 md:px-10 lg:px-[8%]">
+      <section className="px-6 pb-20 md:px-10 lg:px-[8%]">
 
         <motion.div
           initial={{ opacity: 0, y: 70 }}
@@ -53,11 +53,15 @@ function Teaching() {
           className="
           relative
           overflow-hidden
-          rounded-[34px]
+          rounded-[30px]
           border border-[#E4DDD3]
           bg-[#EFEAE2]
-          px-10
-          py-12
+          px-6
+          py-8
+
+          sm:px-10
+          sm:py-12
+
           md:px-14
           md:py-14
         "
@@ -66,14 +70,17 @@ function Teaching() {
           {/* LEFT ACCENT */}
           <div className="absolute left-0 top-0 h-full w-[5px] bg-[#8B3A3A]" />
 
-          <div className="space-y-10">
+          <div className="space-y-8 sm:space-y-10">
 
             <p
               className="
-              text-[1.18rem]
+              text-[1rem]
               italic
-              leading-[2.4rem]
+              leading-[2rem]
               text-[#697386]
+
+              sm:text-[1.18rem]
+              sm:leading-[2.4rem]
             "
             >
               Leadership development, in my approach, extends beyond teaching to the deliberate cultivation of individuals who can think independently, act with integrity, and lead with clarity. While technical competence remains essential, true development lies in building judgment, resilience, and the ability to navigate complex professional and societal contexts.
@@ -81,10 +88,13 @@ function Teaching() {
 
             <p
               className="
-              text-[1.18rem]
+              text-[1rem]
               italic
-              leading-[2.4rem]
+              leading-[2rem]
               text-[#697386]
+
+              sm:text-[1.18rem]
+              sm:leading-[2.4rem]
             "
             >
               I believe enduring professional success is an integration of personal well-being, clarity of purpose, and meaningful societal contribution. Through open dialogue, collaborative inquiry, and structured guidance, I focus on holistic development — enabling individuals to discover purpose, build intellectual confidence, and evolve into self-directed professionals.
@@ -97,9 +107,9 @@ function Teaching() {
       </section>
 
       {/* CURRENT COURSES */}
-      <section className="px-6 pb-28 md:px-10 lg:px-[8%] overflow-hidden">
+      <section className="px-6 pb-24 md:px-10 lg:px-[8%] overflow-hidden">
 
-        <div className="mb-14">
+        <div className="mb-12">
 
           <h2
             className="
@@ -111,7 +121,7 @@ function Teaching() {
             <span
               className="
               block
-              text-5xl
+              text-[3.2rem]
               sm:text-6xl
               lg:text-[5.5rem]
               font-bold
@@ -124,7 +134,7 @@ function Teaching() {
             <span
               className="
               block
-              text-5xl
+              text-[3.2rem]
               sm:text-6xl
               lg:text-[5.5rem]
               font-bold
@@ -138,7 +148,7 @@ function Teaching() {
 
         </div>
 
-        {/* GRID ANIMATION */}
+        {/* GRID */}
         <motion.div
           initial={{ opacity: 0, x: -160 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -162,27 +172,46 @@ function Teaching() {
             group
             will-change-transform
             flex flex-col
-            min-h-[520px]
-            rounded-[34px]
+            min-h-[420px]
+
+            sm:min-h-[520px]
+
+            rounded-[30px]
             border border-[#E5DDD2]
             bg-white
-            p-10
+
+            p-7
+
+            sm:p-10
+
             shadow-sm
             transition-all duration-500
             hover:shadow-[0_22px_60px_rgba(0,0,0,0.06)]
           "
           >
 
+            {/* BADGE */}
             <div
               className="
               absolute
-              right-[-14px]
-              top-10
+              right-4
+
+              sm:right-[-14px]
+
+              top-8
+
               rounded-full
               bg-[#D8B07C]
-              px-6
-              py-3
-              text-sm
+
+              px-4
+              py-2.5
+
+              sm:px-6
+              sm:py-3
+
+              text-[11px]
+              sm:text-sm
+
               font-semibold
               text-white
               shadow-md
@@ -193,8 +222,14 @@ function Teaching() {
 
             <h3
               className="
-              max-w-[85%]
-              text-[3.2rem]
+              max-w-full
+
+              sm:max-w-[85%]
+
+              text-[2.5rem]
+
+              sm:text-[3.2rem]
+
               font-bold
               leading-[0.96]
               tracking-[-0.06em]
@@ -210,9 +245,16 @@ function Teaching() {
 
             <p
               className="
-              mt-12
-              text-[1.12rem]
-              leading-[2.3rem]
+              mt-8
+
+              sm:mt-12
+
+              text-[1rem]
+              leading-[1.9rem]
+
+              sm:text-[1.12rem]
+              sm:leading-[2.3rem]
+
               text-[#697386]
             "
             >
@@ -235,27 +277,46 @@ function Teaching() {
             group
             will-change-transform
             flex flex-col
-            min-h-[520px]
-            rounded-[34px]
+            min-h-[420px]
+
+            sm:min-h-[520px]
+
+            rounded-[30px]
             border border-[#E5DDD2]
             bg-white
-            p-10
+
+            p-7
+
+            sm:p-10
+
             shadow-sm
             transition-all duration-500
             hover:shadow-[0_22px_60px_rgba(0,0,0,0.06)]
           "
           >
 
+            {/* BADGE */}
             <div
               className="
               absolute
-              right-[-14px]
-              top-10
+              right-4
+
+              sm:right-[-14px]
+
+              top-8
+
               rounded-full
               bg-[#A34040]
-              px-6
-              py-3
-              text-sm
+
+              px-4
+              py-2.5
+
+              sm:px-6
+              sm:py-3
+
+              text-[11px]
+              sm:text-sm
+
               font-semibold
               text-white
               shadow-md
@@ -266,8 +327,14 @@ function Teaching() {
 
             <h3
               className="
-              max-w-[85%]
-              text-[3.2rem]
+              max-w-full
+
+              sm:max-w-[85%]
+
+              text-[2.5rem]
+
+              sm:text-[3.2rem]
+
               font-bold
               leading-[0.96]
               tracking-[-0.06em]
@@ -283,9 +350,16 @@ function Teaching() {
 
             <p
               className="
-              mt-12
-              text-[1.12rem]
-              leading-[2.3rem]
+              mt-8
+
+              sm:mt-12
+
+              text-[1rem]
+              leading-[1.9rem]
+
+              sm:text-[1.12rem]
+              sm:leading-[2.3rem]
+
               text-[#697386]
             "
             >
@@ -308,27 +382,46 @@ function Teaching() {
             group
             will-change-transform
             flex flex-col
-            min-h-[520px]
-            rounded-[34px]
+            min-h-[420px]
+
+            sm:min-h-[520px]
+
+            rounded-[30px]
             border border-[#E5DDD2]
             bg-white
-            p-10
+
+            p-7
+
+            sm:p-10
+
             shadow-sm
             transition-all duration-500
             hover:shadow-[0_22px_60px_rgba(0,0,0,0.06)]
           "
           >
 
+            {/* BADGE */}
             <div
               className="
               absolute
-              right-[-14px]
-              top-10
+              right-4
+
+              sm:right-[-14px]
+
+              top-8
+
               rounded-full
               bg-[#A34040]
-              px-6
-              py-3
-              text-sm
+
+              px-4
+              py-2.5
+
+              sm:px-6
+              sm:py-3
+
+              text-[11px]
+              sm:text-sm
+
               font-semibold
               text-white
               shadow-md
@@ -339,8 +432,14 @@ function Teaching() {
 
             <h3
               className="
-              max-w-[85%]
-              text-[3.2rem]
+              max-w-full
+
+              sm:max-w-[85%]
+
+              text-[2.5rem]
+
+              sm:text-[3.2rem]
+
               font-bold
               leading-[0.96]
               tracking-[-0.06em]
@@ -357,9 +456,16 @@ function Teaching() {
 
             <p
               className="
-              mt-12
-              text-[1.12rem]
-              leading-[2.3rem]
+              mt-8
+
+              sm:mt-12
+
+              text-[1rem]
+              leading-[1.9rem]
+
+              sm:text-[1.12rem]
+              sm:leading-[2.3rem]
+
               text-[#697386]
             "
             >
@@ -375,13 +481,13 @@ function Teaching() {
       </section>
 
       {/* PREVIOUS COURSES */}
-      <section className="px-6 pb-28 md:px-10 lg:px-[8%] overflow-hidden">
+      <section className="px-6 pb-24 md:px-10 lg:px-[8%] overflow-hidden">
 
-        <div className="mb-14">
+        <div className="mb-12">
 
           <h2
             className="
-            text-5xl
+            text-[3rem]
             sm:text-6xl
             font-bold
             tracking-[-0.05em]
@@ -436,7 +542,11 @@ function Teaching() {
               rounded-[26px]
               border border-[#E5DDD2]
               bg-white
-              p-7
+
+              p-6
+
+              sm:p-7
+
               shadow-sm
               transition-all duration-500
               hover:shadow-[0_18px_45px_rgba(0,0,0,0.05)]
@@ -463,7 +573,11 @@ function Teaching() {
               <h3
                 className="
                 mt-6
-                text-[2rem]
+
+                text-[1.8rem]
+
+                sm:text-[2rem]
+
                 font-bold
                 leading-[1.12]
                 tracking-[-0.04em]
@@ -477,7 +591,7 @@ function Teaching() {
                 className="
                 mt-5
                 text-[1rem]
-                leading-[2rem]
+                leading-[1.9rem]
                 text-[#697386]
               "
               >
@@ -496,13 +610,13 @@ function Teaching() {
       </section>
 
       {/* TEACHING RESOURCES */}
-      <section className="px-6 pb-32 md:px-10 lg:px-[8%] overflow-hidden">
+      <section className="px-6 pb-28 md:px-10 lg:px-[8%] overflow-hidden">
 
-        <div className="mb-14">
+        <div className="mb-12">
 
           <h2
             className="
-            text-5xl
+            text-[3rem]
             sm:text-6xl
             font-bold
             tracking-[-0.05em]
@@ -555,7 +669,11 @@ function Teaching() {
               rounded-[26px]
               border border-[#E5DDD2]
               bg-white
-              p-7
+
+              p-6
+
+              sm:p-7
+
               shadow-sm
               transition-all duration-500
               hover:shadow-[0_18px_45px_rgba(0,0,0,0.05)]
@@ -564,7 +682,10 @@ function Teaching() {
 
               <h3
                 className="
-                text-[2rem]
+                text-[1.8rem]
+
+                sm:text-[2rem]
+
                 font-bold
                 leading-[1.15]
                 tracking-[-0.04em]
@@ -578,7 +699,7 @@ function Teaching() {
                 className="
                 mt-5
                 text-[1rem]
-                leading-[2rem]
+                leading-[1.9rem]
                 text-[#697386]
               "
               >
