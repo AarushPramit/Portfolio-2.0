@@ -125,31 +125,77 @@ export default function Publications() {
   return (
     <section className="bg-[#F7F5F1] px-6 md:px-10 lg:px-[8%] pt-36 pb-28 overflow-hidden">
 
-      {/* HERO */}
+    {/* HERO */}
 
-      <motion.div
-        initial={{ opacity: 0, y: 35 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="max-w-6xl"
-      >
+<motion.div
+  initial={{ opacity: 0, y: 35 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.8 }}
+  className="max-w-6xl"
+>
 
-        <p className="mb-5 text-sm uppercase tracking-[0.3em] text-[#B57A45]">
-          Scopus / Web of Science Indexed
-        </p>
+  {/* LABEL */}
+  <p
+    className="
+    mb-5
 
-        <h1 className="text-[4.5rem] leading-[0.95] font-bold tracking-[-0.04em] text-[#14274E]">
-          Selected Publications
-        </h1>
+    text-[11px]
+    uppercase
+    tracking-[0.32em]
+    text-[#B57A45]
 
-        <p className="mt-10 max-w-4xl text-[1.45rem] leading-[2.3rem] text-[#6B7280]">
-          Research contributions spanning condensed matter physics,
-          quantum materials, thermoelectric systems, muon spin spectroscopy,
-          and emerging computational approaches in materials science.
-        </p>
+    sm:text-sm
+    "
+  >
+    Scopus / Web of Science Indexed
+  </p>
 
-      </motion.div>
+  {/* HEADING */}
+  <h1
+    className="
+    max-w-6xl
+
+    text-[3.2rem]
+    font-bold
+    leading-[0.95]
+    tracking-[-0.06em]
+    text-[#14274E]
+
+    sm:text-[4.8rem]
+
+    lg:text-[4.5rem]
+    "
+  >
+    Selected
+    <br className="sm:hidden" />
+    Publications
+  </h1>
+
+  {/* SUBTEXT */}
+  <p
+    className="
+    mt-8
+    max-w-4xl
+
+    text-[1.08rem]
+    leading-[1.9rem]
+    text-[#6B7280]
+
+    sm:text-[1.3rem]
+    sm:leading-[2.1rem]
+
+    lg:mt-10
+    lg:text-[1.45rem]
+    lg:leading-[2.3rem]
+    "
+  >
+    Research contributions spanning condensed matter physics,
+    quantum materials, thermoelectric systems, muon spin spectroscopy,
+    and emerging computational approaches in materials science.
+  </p>
+
+</motion.div>
 
       {/* BUTTONS */}
 
